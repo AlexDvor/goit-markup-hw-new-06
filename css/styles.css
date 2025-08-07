@@ -648,28 +648,77 @@ img {
 /* Footer */
 .footer-section {
 	background-color: var(--bg-footer);
-	padding: 100px 0;
+	padding: 96px 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-section {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-section {
+		padding: 100px 0;
+	}
 }
 
 .footer-container {
 	display: flex;
-	align-items: baseline;
+	flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-container {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-container {
+		align-items: baseline;
+	}
 }
 
 .footer-about-thumb {
-	margin-right: 120px;
+	margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-about-thumb {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-about-thumb {
+		margin-right: 120px;
+	}
 }
 
 .footer-social-thumb {
+	margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-social-thumb {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-social-thumb {
+	}
 }
 
 .footer-social-text {
+	text-align: center;
 	font-weight: 500;
-
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--text-inverse);
 	margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-social-text {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-social-text {
+	}
 }
 
 .footer-social-list {
@@ -682,9 +731,20 @@ img {
 }
 
 .logo-footer {
-	display: inline-block;
+	display: block;
+	text-align: center;
 	margin-bottom: 16px;
 }
+
+@media only screen and (min-width: 768px) {
+	.logo-footer {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.logo-footer {
+	}
+}
+
 .footer-text {
 	width: 264px;
 	font-size: 16px;
@@ -692,6 +752,16 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--text-muted);
 }
+
+@media only screen and (min-width: 768px) {
+	.footer-text {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-text {
+	}
+}
+
 .footer-logo-decoration {
 	color: var(--text-muted);
 }
@@ -708,7 +778,18 @@ img {
 }
 .footer-subscribe-form {
 	display: flex;
-	gap: 24px;
+	flex-direction: column;
+	gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+	.footer-subscribe-form {
+	}
+}
+@media only screen and (min-width: 1158px) {
+	.footer-subscribe-form {
+		gap: 24px;
+	}
 }
 
 /* .footer-subscribe-label {
