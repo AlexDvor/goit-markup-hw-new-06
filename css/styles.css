@@ -568,30 +568,33 @@ img {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 24px;
 	row-gap: 48px;
 }
 
 @media only screen and (min-width: 768px) {
 	.portfolio-list {
+		column-gap: 24px;
+		row-gap: 72px;
 	}
 }
 @media only screen and (min-width: 1158px) {
 	.portfolio-list {
+		row-gap: 40px;
 	}
 }
 .portfolio-item {
 	overflow: hidden;
 	transition: box-shadow var(--transition-base);
-	/* width: calc((100% - 2 * 24px) / 3); */
 }
 
 @media only screen and (min-width: 768px) {
 	.portfolio-item {
+		width: calc((100% - 2 * 24px) / 2);
 	}
 }
 @media only screen and (min-width: 1158px) {
 	.portfolio-item {
+		width: calc((100% - 2 * 24px) / 3);
 	}
 }
 
