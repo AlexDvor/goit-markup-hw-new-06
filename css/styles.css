@@ -411,20 +411,45 @@ img {
 	padding: 72px 0;
 	background-color: var(--bg-hero);
 	background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
-		url('../images/hero-image.jpg');
+		url('../images/hero-bgsm@1x.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+@media only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+	.hero-section {
+		background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+			url('../images/hero-bgsm@2x.jpg');
+	}
 }
 
 @media only screen and (min-width: 768px) {
 	.hero-section {
 		padding: 112px 0;
+		background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+			url('../images/hero-bgmd@1x.jpg');
 	}
 }
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+	.hero-section {
+		background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+			url('../images/hero-bgmd@2x.jpg');
+	}
+}
+
 @media only screen and (min-width: 1158px) {
 	.hero-section {
 		padding: 188px 0;
+		background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+			url('../images/hero-bglg@1x.jpg');
+	}
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+	.hero-section {
+		background-image: linear-gradient(var(--bg-hero-gradient), var(--bg-hero-gradient)),
+			url('../images/hero-bglg@2x.jpg');
 	}
 }
 
