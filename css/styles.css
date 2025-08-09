@@ -1281,6 +1281,10 @@ img {
 	color: currentColor;
 }
 
+.mobile-address-link.accent {
+	color: var(--text-accent);
+}
+
 .mobile-social-list {
 	justify-content: flex-start;
 	gap: 40px;
