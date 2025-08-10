@@ -94,6 +94,9 @@ body {
 body:has(.mobile-menu-backdrop.is-open) {
 	overflow-y: hidden;
 }
+body:has(.backdrop.is-open) {
+	overflow-y: hidden;
+}
 img {
 	display: block;
 	max-width: 100%;
@@ -555,6 +558,7 @@ img {
 
 @media only screen and (min-width: 768px) {
 	.features-subtitle {
+		text-align: start;
 	}
 }
 @media only screen and (min-width: 1158px) {
@@ -1014,12 +1018,13 @@ img {
 	justify-content: center;
 	align-items: center;
 	min-height: 40px;
-	min-width: 165px;
-	/* margin: 0 auto; */
+	max-width: 165px;
+	margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
 	.footer-subscribe-btn {
+		margin: 0;
 	}
 }
 @media only screen and (min-width: 1158px) {
@@ -1055,7 +1060,7 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 408px;
+	width: 288px;
 	min-height: 584px;
 	padding: 72px 24px 24px 24px;
 	border-radius: 4px;
@@ -1065,6 +1070,12 @@ img {
 	background-color: var(--bg-modal);
 	transition: var(--transition-base);
 	transition-property: transform;
+}
+
+@media only screen and (min-width: 768px) {
+	.modal {
+		width: 408px;
+	}
 }
 
 .modal-title {
