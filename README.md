@@ -9,8 +9,8 @@ This repository contains a static layout based on a design from Figma. The proje
 ## 📁 Project Structure
 
 - `index.html` — main page layout
-- `styles/` — CSS styles
-- `assets/` — images and media files
+- `css/` — CSS styles
+- `images/` — images and media files
 - `js/`— JavaScript files
 
 ## 🚀 Technologies Used
